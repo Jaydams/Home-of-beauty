@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to top right, #d8561a, #f79a6e);
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  color: rgb(255, 255, 255);
+  padding: 15px;
+  display: flex;
+  padding: 30px 10%;
+  align-items: center;
+}
+
+.logo {
+  flex: 10%;
+}
+
+.logo h2 {
+  font-family: cursive;
+}
+
+.nav {
+  list-style: none;
+  text-align: center;
+  flex: 80%;
+}
+
+li {
+  display: inline;
+}
+
+.logo h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+
+.hamburger {
+  flex: 10%;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
+}
+
+.ham {
+  position: absolute;
+  right: 0;
+}
+
+.hamb {
+  margin-bottom: 4px;
+  height: 5px;
+  width: 40px;
+  background: white;
+  border-radius: 15px;
+}
+
+.ham-nav {
+  display: none;
+}
+
+main {
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding: 0 10%;
+  height: 620px;
+  margin-top: 100px;
+}
+
+.content {
+  width: 100%;
+  background-color: #eee;
+  display: flex;
+  padding: 15px 15px 0 15px;
+  border-radius: 25px 25px 0 0;
+  align-items: center;
+}
+
+.text-div {
+  flex: 40%;
+  padding: 20px;
+}
+
+h2,
+h4,
+.text-div p {
+  color: rgb(6, 6, 34);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  margin-bottom: 5px;
+  font-size: smaller;
+}
+
+p {
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.img-div {
+  flex: 60%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+}
+
+.inn-img-div {
+  margin: 10px;
+  /* flex: 40%; */
+  background-color: black;
+  border-radius: 15px;
+  position: relative;
+  bottom: 100px;
+  width: 40%;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: -5px -3px 8px -2px rgba(37, 37, 37, 0.315);
+  height: inherit;
+}
+
+.img1 {
+  height: 550px;
+}
+
+.img2 {
+  height: 600px;
+}
+
+.morphic {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+}
+
+.btn-div {
+  display: flex;
+  justify-content: left;
+}
+
+.btn-div a {
+  padding: 15px;
+  margin: 20px 7px 0 0;
+}
+
+.btn-1 {
+  background-color: #d8561a;
+  border: 2px solid #d8561a;
+}
+
+a:hover,
+.btn-1:hover {
+  background-color: #eee;
+  color: #d8561a;
+}
+
+.btn-2 {
+  border: 2px solid #d8561a;
+  color: #d8561a;
+}
+
+.btn-2:hover {
+  background-color: #d8561a;
+  border: 2px solid #d8561a;
+  color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+  .inn-img-div {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .inn-img-div {
+    bottom: 0;
+    height: 400px;
+  }
+
+  main {
+    height: auto;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .btn-div {
+    justify-content: center;
+  }
+
+  .nav {
+    display: none;
+  }
+
+
+@media only screen and (max-width: 670px) {
+  .img-div {
+    flex-direction: column;
+  }
+  .inn-img-div {
+    width: 100%;
+  }
+}
